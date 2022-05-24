@@ -4,4 +4,6 @@
     margin: 5px auto;
     background-color: #282c34;
     color: #fff;
+    position: absolute;
+    bottom: 0;
 }

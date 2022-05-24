@@ -1,6 +1,6 @@
 .nav{
     width: 100%;
-    height: 80px;
+    height: 60px;
     background-color: cornflowerblue;
     z-index: 200;
     position: sticky;
@@ -8,8 +8,8 @@
 }
 .navbar{
     width: 80%;
-    margin: 0 auto; 
-    height: 70px;
+    /* margin: 0 auto;  */
+    height: 60px;
     background-color: cornflowerblue;
     z-index: 200;
     display: flex;
@@ -17,37 +17,56 @@
     justify-content: space-between;
     cursor: pointer;
 }
-.nav_logo{
-    margin: 10px;
-    font-size: 20px;
-    font-weight: 600;
+.nav_logo{    
+    margin: 60px;
+    font-size: 19px;
+    font-weight: 700;
+    /* color: #b953b9; */
 }
 .navlist{
-    width: 300px;
+    width: 320px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 50px;
-    font-size: 17px;
-    font-weight: 500;
+    /* margin: 10px; */
 }
-.navlist ul{
-    width: 700px; 
-    font-size: 17px;
+.nav-list{
+    margin-right: 10px;
+    width: 483px;
+}
+.nav-list ul{
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.navlist ul li{
+.nav-list ul li{
+    /* background-color: #37444a; */
+    color: #fff;
+    width: 47px;
+    padding: 20px;
+    margin:  0 2px ;
+    text-align: center;
+}
+.btn-list{
     width: 100%;
-    margin: 10px;
-    padding: 10px;
 }
-.navlist ul li:hover{
-    font-size: 20px;
+.btn-list .btn{
+    width: 89px;
+    padding: 22px;
+    margin: 5px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #b953b9;
+}
+.nav-list ul li:hover{
+    font-size: 15px;
     font-weight: 600;
+    width: 50px;
+    background-color: #111;
 }
+
 .linking{
     text-decoration: none;
     color: #fff;
