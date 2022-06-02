@@ -3,7 +3,9 @@ import './blog.css';
 
 function Blog() {
   return (
-    <div>Blog</div>
+    <div className='blog'>
+        Blog
+    </div>
   )
 }
 

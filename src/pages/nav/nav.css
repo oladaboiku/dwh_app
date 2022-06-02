@@ -1,73 +1,70 @@
 .nav{
     width: 100%;
-    height: 60px;
-    background-color: cornflowerblue;
-    z-index: 200;
+    height: 100px;
+    background-color: #5353f2;
+    margin: 0 auto; 
+    color: #fff;
+}
+.nav:hover{
+    max-height: 10%;
+}
+.navCon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: sticky;
     top: 0;
 }
-.navbar{
-    width: 80%;
-    /* margin: 0 auto;  */
-    height: 60px;
-    background-color: cornflowerblue;
-    z-index: 200;
+.navList{
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 20px;
+    padding: 10px;
     cursor: pointer;
-}
-.nav_logo{    
-    margin: 60px;
-    font-size: 19px;
-    font-weight: 700;
-    /* color: #b953b9; */
-}
-.navlist{
-    width: 320px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* margin: 10px; */
-}
-.nav-list{
-    margin-right: 10px;
-    width: 483px;
-}
-.nav-list ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.nav-list ul li{
-    /* background-color: #37444a; */
-    color: #fff;
-    width: 47px;
-    padding: 20px;
-    margin:  0 2px ;
     text-align: center;
 }
-.btn-list{
-    width: 100%;
+.navlogo{
+    width: 20%;
+    margin: 0 10px;
 }
-.btn-list .btn{
-    width: 89px;
-    padding: 22px;
-    margin: 5px;
+.navlogo h1{
+    text-align: center;
+}
+.list{
+    width: 800px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 17px;
+}
+.list_nav{
+    text-transform: capitalize;
+    /* width: 150px; */
+    padding: 25px;
+    margin: 0 5px;
     border: none;
-    outline: none;
-    color: #fff;
-    background-color: #b953b9;
+    border-radius: 10px;
 }
-.nav-list ul li:hover{
-    font-size: 15px;
-    font-weight: 600;
-    width: 50px;
-    background-color: #111;
+.list_nav:hover{
+    width: 100px;
+    background-color: #444;
 }
-
-.linking{
-    text-decoration: none;
+.navBtn{
+    width: 100px;
+    margin: 5px;
+}
+.btnVisit{
+    width: 120px;
+    margin: 0 5px;
+    padding: 28px;
+    border: none;
+    border-radius: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
     color: #fff;
+    background-color: #8b538b;
 }

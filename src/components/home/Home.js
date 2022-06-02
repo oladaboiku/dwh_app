@@ -1,6 +1,5 @@
-import React from 'react';
-import Nav from '../../pages/nav/Nav';
-import './home.css';
+import React from 'react'
+import Nav from '../../pages/nav/Nav'
 
 function Home() {
   return (
