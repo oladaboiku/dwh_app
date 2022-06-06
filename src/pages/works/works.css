@@ -1,0 +1,36 @@
+.works{
+    width: 100%;
+    margin: 2px auto;
+    background-color: #eae2e2;
+}
+.workTitle{
+    margin: 2px;
+    padding: 2px;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.workTxt{
+    width: 500px;
+    margin: 0 auto
+}
+.workCon{
+    max-width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+}
+.workImg{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.workImg img{
+    width: 100%;
+    margin: 1px;
+    padding: 10px;
+    border-radius: 5px;
+    object-fit: cover;
+}
