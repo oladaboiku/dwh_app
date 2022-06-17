@@ -1,8 +1,10 @@
 import React from 'react';
 import Features from '../../pages/features/Features';
-import Nav from '../../pages/nav/Nav';
+import Nav from '../nav/Nav';
+import Products from '../../pages/products/Products';
 import Slider from '../../pages/slider/Slider';
 import Works from '../../pages/works/Works';
+import Footer from '../../pages/footer/Footer';
 
 function Home() {
   return (
@@ -11,6 +13,8 @@ function Home() {
         <Slider/>
         <Features/>
         <Works/>
+        <Products/>
+        <Footer/>
     </div>
   )
 }

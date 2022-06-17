@@ -5,6 +5,11 @@ import {
   Route,
 } from "react-router-dom";
 import Home from "./components/home/Home";
+import About from "./pages/about/About";
+import Blog from "./pages/blog/Blog";
+import Contact from "./pages/contact/Contact";
+import Services from "./pages/services/Services";
+import Nav from "./components/nav/Nav";
 
 function App() {
   return (
@@ -13,12 +18,11 @@ function App() {
         <Routes>
           <Route path="/">
             <Route index element={<Home/>}/>
-          </Route>
-            <Route path="nav">
-              {/* <Route path="about" element={<About/>}/>
+            <Route path="nav" element={<Nav/>}/>
+              <Route path="about" element={<About/>}/>
               <Route path="services" element={<Services/>}/>
               <Route path="blog" element={<Blog/>}/>
-              <Route path="contact" element={<Contact/>}/> */}
+              <Route path="contact" element={<Contact/>}/>
             </Route>
         </Routes>
       </BrowserRouter>
