@@ -1,5 +1,6 @@
 import React from 'react';
 import './footer.css';
+import Logo from '../pics/logo.png';
 
 function Footer() {
 
@@ -11,8 +12,7 @@ function Footer() {
     <div className='footer'>
         <div className="footerCon">
           <div className="footerLogo">
-            <h1>DWH Fashion</h1>
-            {/* <h4>&quote;...for glory, for beauty...&quote;</h4> */}
+            <img src={Logo} alt="logo"  />
           </div>
           <div className="footer_contact">
             <h2>we are here</h2>
@@ -34,7 +34,7 @@ function Footer() {
           </div>
         </div>
         <div className="footerCopyright">
-          <p>greenTech<span>&copy; {today.getFullYear()}</span></p>
+          <p>greenTech<span>&copy; {today.getFullYear()}</span>| all reserve </p>
         </div>
     </div>
   )
