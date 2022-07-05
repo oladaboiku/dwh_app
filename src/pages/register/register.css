@@ -1,0 +1,141 @@
+.register{
+    width: 100%;
+    margin: 0 auto;
+}
+.registerCon{
+    width: 90%;
+    margin: 10px auto;
+    background-color: #f0f0ff;
+}
+.form{
+    /* width: 100%; */
+    margin:10px auto 0 auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid grey;
+}
+.form .formTxt{
+    text-transform: capitalize;
+}
+form{
+    width: 80%;
+    margin: 5px auto;
+}
+.formControl{
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 5px;
+}
+.formControl h3{
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 600;
+}
+.formUpload{
+    /* text-align: start; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+
+}
+.formUpload .upload_image{
+    border: 1px solid grey;
+    width: 100px;
+    min-height: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.formUpload .upload_image img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.username{
+    width: 100%;
+    padding: 10px;
+}
+.username input{
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid grey ;
+    outline: none;
+    background-color: #fff;
+}
+.username input [placeholder]{
+    text-transform: capitalize;
+}
+.username label{
+    text-transform: capitalize; 
+    margin: 2px;
+}
+.formCheck{
+    text-transform: capitalize;
+    width: 90%;
+    margin: 0 auto;
+}
+.form_boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.train_box{
+    border: 1px solid grey;
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+.cardBox{
+    font-size: 16px;
+}
+.cardBoxTxt{
+    font-weight: 300;
+    margin: 0 auto;
+}
+.cardBoxTxt ul{
+    list-style: circle ;
+}
+.cardBoxPrice{
+    font-weight: 600;
+    font-size: 20px;
+}
+.cardBox button{
+    width: 150px;
+    padding: 10px;
+    background-color:  #83D382 ;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+}
+.form_decalare{
+    width: 100%;
+}
+.form_decalare p{
+    font-weight: 600;
+}
+.register form button{
+    width: 150px;
+    margin: 15px 0 0 0;
+    padding: 15px;
+    background-color: #83D382 ;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+}

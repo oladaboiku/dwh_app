@@ -19,6 +19,7 @@ function Nav() {
                     <li className="list_nav"><Link to="/about" className="linking">about</Link></li>
                     <li className="list_nav"><Link to="/services" className="linking">services</Link></li>
                     <li className="list_nav"><Link to="/blog" className="linking">blog</Link></li>
+                    {/* <li className="list_nav"><Link to="/register" className="linking">register</Link></li> */}
                     <li className="list_nav"><Link to="/contact" className="linking">contact</Link></li>
                 </ul>
                 <div className="navBtn">

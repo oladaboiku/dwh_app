@@ -29,7 +29,7 @@ function Contact
                       <p>Adjacent L.E.A Primary school Katampe 1, Mpape District, FCT Abuja. Nigeria</p>
                     </div>
                 </div>
-                <div className="form">
+                <div className="contact-form">
                   <form>
                     <div className="form-control">
                     <label htmlFor="name">name</label>

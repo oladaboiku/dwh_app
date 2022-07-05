@@ -1,0 +1,28 @@
+.blog{
+    width: 100%;
+    /* min-height: 100vh; */
+    background-color: hsl(240, 100%, 97%);
+    box-shadow: 2px 2px 5px grey;
+    text-align: center;
+}
+.blogCon{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    width: 85%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.blogMain{
+    flex: 3;
+}
+.blogMain h1{
+    text-transform: capitalize;
+    font-weight: 400;
+}
+/* .blogAside{
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border-left: 1px solid #888;
+} */
