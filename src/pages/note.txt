@@ -1,0 +1,217 @@
+ // const [selectedFile, setSelectedFile] = useState([]);
+  // const [submiting, setSubmiting] = useState(false);
+  // const [inputFields, setInputFields] = useState([
+  //   { name: '', email: '' , address: '', phone: '', name1: '', email1: '', address1: '', phone1:''}
+  // ])
+  // const [name, setName] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [address, setAddress] = useState('');
+  // const [phone, setPhone] = useState('');
+  // const [name1, setName1] = useState('');
+  // const [email1, setEmail1] = useState('');
+  // const [address1, setAddress1] = useState('');
+  // const [phone1, setPhone1] = useState('');
+
+  const changeHandler = (event) => {
+		setSelectedFile(URL.createObjectURL(event.target.files[0]))
+	};
+//   const handleFormChange = (index, event) => {
+//     let data = [...inputFields];
+//     data[index]  = event.target.value;
+//     setInputFields(data);
+//  }
+// const handleNameChange =(e)=>{
+//   setName(e.target.value);
+// }
+// const handleName1Change =(e)=>{
+//   setName1(e.target.value);
+// }
+// const handlePhoneChange =(e)=>{
+//   setPhone(e.target.value);
+// }
+// const handlePhone1Change =(e)=>{
+//   setPhone1(e.target.value);
+// }
+// const handleAddressChange =(e)=>{
+//   setAddress(e.target.value);
+// }
+// const handleAddress1Change =(e)=>{
+//   setAddress1(e.target.value);
+// }
+// const handleEmail1Change =(e)=>{
+//   setEmail1(e.target.value);
+// }
+// const handleEmailChange =(e)=>{
+//   setEmail(e.target.value);
+// }
+//   const handleSubmit = event => {
+//     event.preventDefault();
+//     setSubmiting(true)
+//     console.log(setSubmiting);
+//   }
+{/* <div className="form">
+            <div className="formTxt">
+                <h1>kindly fill out the form</h1>
+            </div>
+            {submiting &&
+              <div>Submiting form...</div>
+            }
+            <form onSubmit={handleSubmit}>
+              <div className="formControl">
+                <div className="formUpload">
+                <h3>Upload your picture</h3>
+                <div className="upload_image"> 
+                  <img src={selectedFile} alt=''/>
+                </div>
+                <div className="upload"> */}
+                  {/* <FontAwesomeIcon Icon="fa-solid fa-upload"/> */}
+                {/* <input type="file" onChange={changeHandler}/>
+                </div>
+                </div>
+              </div>
+              <div className="formControl">
+                <h3>Bio data</h3>
+                <div className="username">
+                  <label htmlFor="username">Name</label>
+                  <input type="text" 
+                  name="userName" 
+                  id="username" 
+                  value={name} 
+                  onChange={(e) => handleNameChange(e)} 
+                  placeholder="enter name" />
+                </div>
+                <div className="username">
+                  <label htmlFor="addrees">address</label>
+                  <input type="text" 
+                  name="address" 
+                  id="address" 
+                  value={address} 
+                  onChange={(e) => handleAddressChange(e)} 
+                  placeholder="enter address" />
+                </div>
+                <div className="username">
+                  <label htmlFor="phone">phone</label>
+                  <input type="phone" 
+                  name="phone" 
+                  id="phone" 
+                  value={phone} 
+                  onChange={(e) => handlePhoneChange(e)} 
+                  placeholder="enter phone" />
+                </div>
+                <div className="username">
+                  <label htmlFor="email">email</label>
+                  <input type="text" 
+                  name="email" 
+                  id="email" 
+                  value={email} 
+                  onChange={(e) => handleEmailChange(e)} 
+                  placeholder="enter email" />
+                </div>
+              </div>
+              <div className="formControl">
+                <div className="formCheck">
+                  <h2>choose any of our training plans</h2>
+                  <div className="form_boxes">
+                      <div className="train_box">
+                        <div className="cardBox">
+                          <h3>3 month training</h3>
+                          <div className="cardBoxTxt">
+                            <ul>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                          </div>
+                          <div className="cardBoxPrice">
+                            <p>&#8358;25,000</p>
+                          </div>
+                          <button>select</button>
+                        </div>
+                      </div>
+                      <div className= "train_box">
+                      <div className="cardBox">
+                          <h3>6 month training</h3>
+                          <div className="cardBoxTxt">
+                            <ul>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                          </div>
+                          <div className="cardBoxPrice">
+                            <p>&#8358;50,000</p>
+                          </div>
+                          <button>select</button>
+                        </div>
+                      </div>
+                      <div className="train_box">
+                      <div className="cardBox">
+                          <h3>1 year training</h3>
+                          <div className="cardBoxTxt">
+                            <ul>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                              <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                          </div>
+                          <div className="cardBoxPrice">
+                            <p>&#8358;100,000</p>
+                          </div>
+                          <button>select</button>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div className="formControl">
+                <div className="form_guarantor">
+                  <h3>guarantor</h3>
+                  <div className="username">
+                  <label htmlFor="username1">Name</label>
+                  <input type="text" 
+                  name="username1" 
+                  id="username11" 
+                  value={name1} 
+                  onChange={(e) => handleName1Change(e)}  
+                  placeholder="enter name" />
+                </div>
+                <div className="username">
+                  <label htmlFor="addrees1">address</label>
+                  <input type="text" 
+                  name="address1" 
+                  id="address1" 
+                  value={address1} 
+                  onChange={(e) => handleAddress1Change(e)}   
+                  placeholder="enter address" />
+                </div>
+                <div className="username">
+                  <label htmlFor="phone1">phone</label>
+                  <input type="phone" 
+                  name="phone1" 
+                  id="phone1" value={phone1} 
+                  onChange={(e) => handlePhone1Change(e)}   
+                  placeholder="enter phone" />
+                </div>
+                <div className="username">
+                  <label htmlFor="email1">email</label>
+                  <input type="text" 
+                  name="email1" 
+                  id="email1" 
+                  value={email1} 
+                  onChange={(e) => handleEmail1Change(e)}   
+                  placeholder="enter email" />
+                </div>
+                </div>
+              </div>
+              <div className="formControl">
+                <div className="form_decalare">
+                  <h3>declaration</h3>
+                  <p>I.......................................................... Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi rerum ea numquam commodi quam delectus modi recusandae neque consectetur molestias.</p>
+                </div>
+              </div>
+              <button type="submit">submit</button>
+            </form> */}
+        {/* </div>      */}

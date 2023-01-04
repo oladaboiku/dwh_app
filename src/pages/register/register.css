@@ -3,139 +3,221 @@
     margin: 0 auto;
 }
 .registerCon{
-    width: 90%;
+    width: 100%;
     margin: 10px auto;
-    background-color: #f0f0ff;
+    background-color: #666;
+    color: #fff;
 }
-.form{
-    /* width: 100%; */
-    margin:10px auto 0 auto;
-    padding: 20px;
+/* body {
+    background: #0e101c;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+  } */
+  .register hr{
+    width: 100%;
+  }
+  .registerCon form {
+    min-width: 500px;
+    margin: 0 auto;
+  }
+  .registerCon .form {
+    /* background: #0e101c; */
+    max-width: 500px;
+    margin: 0 auto;
+    color: white;
+    border: 2px solid grey;
+  }
+  .registerTxt{
+    width: 100%;
+    margin: 0 auto;
+    color: #111;
     text-align: center;
-    border: 1px solid grey;
-}
-.form .formTxt{
-    text-transform: capitalize;
-}
-form{
-    width: 80%;
-    margin: 5px auto;
-}
-.formControl{
-    border: 1px solid grey;
-    border-radius: 5px;
-    margin: 5px;
-}
-.formControl h3{
-    text-transform: capitalize;
-    font-size: 15px;
+    padding-bottom: 10px;
+  }
+  .registerTxt h1 {
     font-weight: 600;
-}
-.formUpload{
-    /* text-align: start; */
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    margin: 0 auto;
-
-}
-.formUpload .upload_image{
-    border: 1px solid grey;
-    width: 100px;
-    min-height: 100px;
-    padding: 5px;
-    border-radius: 10px;
-    margin: 5px;
-}
-.formUpload .upload_image img{
+    color: #fff;
+    font-size: 2rem;
+    margin-top:10px;
+  }
+  .registerTxt span{
+    font-weight: 500;
+    font-size: 1rem;
+    font-style: italic;
+    color: #a53333;
+  }
+  /* .registerCon p {
+    color: #bf1650;
+  } */
+  
+  .registerCon p::before {
+    display: inline;
+    content: " ";
+  }
+  .registerCon select{
+    width: 20%;
+    padding: 7px;
+    text-transform: capitalize;
+  }
+  .registerCon input {
+    display: block;
+    box-sizing: border-box;
     width: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-}
-.username{
-    width: 100%;
-    padding: 10px;
-}
-.username input{
-    width: 50%;
-    padding: 10px;
-    border-radius: 5px;
+    border-radius: 4px;
+    border: 1px solid white;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .registerCon label {
+    line-height: 1;
+    text-align: left;
+    display: inline-block;
+    /* margin-bottom: 13px;
+    margin-top: 20px; */
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .registerCon  button[type="submit"],
+  .registerCon input[type="submit"] {
+    background: #83D382;
+    color: white;
+    text-transform: uppercase;
     border: none;
-    border-bottom: 2px solid grey ;
-    outline: none;
-    background-color: #fff;
-}
-.username input [placeholder]{
-    text-transform: capitalize;
-}
-.username label{
-    text-transform: capitalize; 
-    margin: 2px;
-}
-.formCheck{
-    text-transform: capitalize;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 10px;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+  }
+  
+  .registerCon button[type="submit"]:hover,
+  .registerCon input[type="submit"]:hover {
+    background:  #50a64e;
+  }
+  
+  .registerCon button[type="submit"]:active,
+  .registerCon input[type="button"]:active,
+  .registerCon input[type="submit"]:active {
+    transition: 0.3s all;
+    transform: translateY(3px);
+    border: 1px solid transparent;
+    opacity: 0.8;
+  }
+  
+  .registerCon  input:disabled {
+    opacity: 0.4;
+  }
+  
+  .registerCon input[type="button"]:hover {
+    transition: 0.3s all;
+  }
+  
+  /* .registerCon button[type="submit"],
+  .registerCon input[type="button"],
+  .registerCon input[type="submit"] {
+    -webkit-appearance: none;
+  } */
+  
+  .registerCon button[type="button"] {
+    display: block;
+    appearance: none;
+    background: #333;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 4px;
+  }
+  
+  hr {
+    margin-top: 30px;
+  }
+  
+  .registerCon button {
+    display: block;
+    appearance: none;
+    margin-top: 40px;
+    border: 1px solid #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 4px;
+  }
+  .selectProgramme{
     width: 90%;
-    margin: 0 auto;
-}
-.form_boxes{
+    margin: 15px auto;
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: 5px;
+  }
+  .selectProgramme h3{
+    width: 100%;
+    margin: 10px auto;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  
+  .selectProgramme .cardSelect{
+    width: 100%;
+    margin: 20px auto;
+    padding: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-}
-.train_box{
-    border: 1px solid grey;
-    margin: 10px auto;
-    padding: 5px;
-    border-radius: 5px;
-}
-.cardBox{
-    font-size: 16px;
-}
-.cardBoxTxt{
-    font-weight: 300;
+  }
+  .selectProgramme .cardSelect .card{
+    width: 300px;
+    font-weight: 400;
     margin: 0 auto;
-}
-.cardBoxTxt ul{
-    list-style: circle ;
-}
-.cardBoxPrice{
-    font-weight: 600;
-    font-size: 20px;
-}
-.cardBox button{
-    width: 150px;
-    padding: 10px;
-    background-color:  #83D382 ;
-    color: #fff;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 
+    0 1px 2px rgba(0,0,0,0.24);
+  }
+  .cardTitle{
     text-transform: capitalize;
-    font-size: 15px;
-    font-weight: 500;
-}
-.form_decalare{
+    font-weight: 400;
+    margin-top: 10px;
+  }
+  .cardInfo{
+    margin: -30px;
+  }
+  .cardInfo ol{
+      list-style-type: none; 
+  }
+  .cardInfo ol li{
     width: 100%;
-}
-.form_decalare p{
-    font-weight: 600;
-}
-.register form button{
+    margin: 0 -20px;
+  }
+  .selectProgramme .cardSelect .card button{
     width: 150px;
-    margin: 15px 0 0 0;
     padding: 15px;
-    background-color: #83D382 ;
-    color: #fff;
-    border-radius: 5px;
+    margin: 50px auto;
     border: none;
     outline: none;
+    color: #fff;
+    background-color: #50a64e;
+    border-radius: 5px;
     cursor: pointer;
-    text-transform: capitalize;
-    font-size: 15px;
-    font-weight: 500;
-}
+  }
+  .selectProgramme .cardSelect .card:hover{
+    transition: 0.3s all;
+    transform: scale(1.2);
+    border: 1px solid grey;
+    background-color: grey;
+    /* opacity: 0.8; */
+  }
+  .gaurantor-form{
+    width: 80%;
+    border: 2px solid #fff;
+  }
